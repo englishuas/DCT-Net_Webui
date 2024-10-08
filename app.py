@@ -57,4 +57,4 @@ with gr.Blocks() as demo:
     run_video = gr.Button('转绘视频')
     run_button.click(fn=infer, inputs=[image,modeid], outputs=result)
     run_video.click(fn=infer_video, inputs=[video_input,modeid], outputs=result_video)
-demo.launch(inbrowser=True)
+demo.launch(share=True)
