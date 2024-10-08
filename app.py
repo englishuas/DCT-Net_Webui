@@ -21,7 +21,7 @@ def infer(image,modeid):
 
 def infer_video(video,modeid):
 
-    cmd = rf".\py39\python.exe run_vid.py --video_path={video} --model_name={modeid}"
+    cmd = rf"/usr/bin/python3 run_vid.py --video_path={video} --model_name={modeid}"
 
     res = subprocess.Popen(cmd)
 
